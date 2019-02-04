@@ -1,9 +1,8 @@
-## Online Learning Algorithms as Apache Kafka Streams
+## Recursive Least Squares Algorithm with Apache Kafka
 
-This project aims at showing that Online Learning algorithms and Apache Kafka as a Stream processing system are a great fit. 
+[Online learning algorithms](https://en.wikipedia.org/wiki/Online_machine_learning) are a great fit for event streaming platforms such as [Apache Kafka](https://kafka.apache.org/), since they continuously adpat their model one event at a time as new data arrives. 
 
-Currently the only connected algorithm is the recursive least
-squares algorithm from the SMILE project. 
+The [recursive least squares algorithm](https://en.wikipedia.org/wiki/Online_machine_learning#Online_learning:_recursive_least_squares) is possibly the most well known online learning algorithm. This project shows how to train a [linear least squares model](https://en.wikipedia.org/wiki/Linear_least_squares) using the recursive least squares algorithm reading data from a Kafka input topic one event at a time and writing the model (slope and y-intercept) to an output topic on Kafka.  
 
 ### Prerequisites
 
